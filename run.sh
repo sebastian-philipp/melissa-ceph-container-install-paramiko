@@ -16,11 +16,6 @@ then
 fi
 
 
-# The output image name: this should match whatever is configured as
-# the image name in your Rook cluster CRD object.
-IMAGE=quay.ceph.io/ceph-ci/ceph
-TAG=master
-
 pushd image
 docker build -t $REPO/ceph/ceph:latest .
 popd
