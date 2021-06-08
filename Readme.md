@@ -14,4 +14,4 @@ docker run --privileged -d --name registry \
 
 2. run ./run.sh localhost:5000
 
-3. run `CEPHADM_IMAGE=localhost:5000/ceph/ceph:latest cephadm bootstrap`
+3. run `sudo ./cephadm --image localhost:5000/ceph/ceph bootstrap ...`
